@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+          <div class="row">
+            <h1>Password Generator</h1>
+            <div class="input-group input-group-icon">
+              <input type="number" placeholder="Enter Length"/>
+              <div class="input-icon"><i class="fa-solid fa-arrow-down-1-9"></i></div>
+            </div>
+        
+            <div class="row">
+              <div class="input-group">
+                <input id="letter" type="checkbox"/>
+                <label for="letter">Include Letters ( e.g. i, l, 1, L, o, 0, O )</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-group">
+                <input id="number" type="checkbox"/>
+                <label for="number">Include Number ( e.g. 123456 )</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-group">
+                <input id="symbol" type="checkbox"/>
+                <label for="symbol">Include Symbols ( e.g. @#$% )</label>
+              </div>
+            </div>
+            
+            <div class="row">
+              <button type="button" class="btn-primary">Generate</button>
+            </div>
+           
+            <div class="input-group input-group-icon">
+              <input type="password" placeholder="Password" readonly/>
+              <div class="input-icon"><i class="fa fa-key"></i></div>
+            </div>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
